@@ -1,22 +1,43 @@
+import YDC from '../assets/ydc-voting-app.png'; 
+import MVC from '../assets/mvc.png';
+import Note from '../assets/note-taker.png';
+import CSC from '../assets/code-script-chum.png';
+
 export default function Portfolio() {
-    return (
-      <div>
-        <h1>Blog Page</h1>
-        <p>
-          Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-          Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-          dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-          sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-          sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-          vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-          libero. Class aptent taciti sociosqu ad litora torquent per conubia
-          nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-          lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-          in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-          bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-          est ligula suscipit velit, sed bibendum turpis dui in sapien.
-        </p>
+  return (
+    <section id="portfolio">
+      <div className="l-side">
+        <h3>Portfolio</h3>
       </div>
-    );
-  }
+      <div className="r-side">
+        <a className="p-10 bg-gray-800 rounded-md " href="https://github.com/chrisduffey/ydc-voting-app" aria-label="Voting Application">
+          <div>
+          <h4>YDC VOTE</h4>
+            <img src={YDC} alt="YDC Project" className='h-[50px] w-[100px] object-contain border border-black'/>            
+          </div>
+        </a> 
+        <a className="p-4 bg-gray-800 rounded-md border-[5px] border-black-400" href="https://github.com/chrisduffey/mvc-tech-blog" aria-label="Tech Blog">
+          <div>
+          <h4>MVC TECH BLOG</h4>
+            <img src={MVC} alt="MVC Project" className='h-[100px] w-[150px] object-contain border border-black' />
+            
+          </div>
+        </a> 
+        <a className="p-4 bg-gray-800 rounded-md" href="https://github.com/chrisduffey/note-taker" aria-label="Note Taking application">
+          <div>
+          <h4>Note Taker Application</h4>
+            <img src={Note} alt="Note Project" className='h-[100px] w-[150px] object-contain border border-black' />
+            
+          </div>
+        </a> 
+        <a className="p-4 bg-gray-800 rounded-md" href="https://github.com/chrisduffey/code-script-chum?tab=readme-ov-file" aria-label="A resource search engine for front end developers">
+          <div>
+          <h4>Code Script Chum Resource Site</h4>
+            <img src={CSC} alt="CSC Project" className='h-[100px] w-[100px] object-contain border border-black' />
+            
+          </div>
+        </a> 
+      </div>
+    </section>
+  );
+}
