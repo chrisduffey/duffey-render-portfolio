@@ -1,20 +1,54 @@
+import styles from './ContactStyles.module.css'
+
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+    <section id='contact' className={styles.container}>
+<h1 className='sectionTitle'>Contact </h1>
+<form action=''>
+    <div className='formGroup'>
+        <label 
+        htmlFor='name' 
+        hidden>
+            Name
+        </label>
+        <input 
+        type='text' 
+        name='name' 
+        id='name'
+        placeholder='name'
+         required
+          />
     </div>
+    <div className='formGroup'>
+        <label htmlFor='email' 
+        hidden>
+            Email
+        </label>
+        <input 
+        type='text' 
+        name='email' 
+        id='email'
+        placeholder='Email' 
+        required 
+        />
+    </div>
+    <div className='formGroup'>
+        <label 
+        htmlFor='message' 
+        hidden>
+            Message
+        </label>
+        <textarea
+        
+        name='message' 
+        id='message'
+        placeholder='Message' 
+        required> </textarea>
+        
+    </div>
+    <input className='hover btn' type="submit"  value='Submit' />
+</form>
+
+  </section>
   );
 }
