@@ -1,9 +1,22 @@
 #root {
   max-width: auto;
+  max-height: auto;
   margin: 0 auto;
-  
+  color:black;
+  font-weight: bold;
+  background-color: #94A89A;
   
 }
+.about-container {
+  padding: 50px; /* Increase padding */
+  height: auto;
+  width: auto;
+}
+
+.nav-tabs {
+  background-color:#94A89A ; /* Change to your desired color */
+}
+
 
 .logo {
   height: 6em;
@@ -38,5 +51,5 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: #918f8f;
 }
