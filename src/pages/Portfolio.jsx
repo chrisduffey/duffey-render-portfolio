@@ -1,5 +1,5 @@
 import YDC from '../assets/ydc-voting-app.png'; 
-import MVC from '../assets/mvc.png';
+import MVC from '../assets/MVC.png';
 import Note from '../assets/note-taker.png';
 import CSC from '../assets/code-script-chum.png';
 
